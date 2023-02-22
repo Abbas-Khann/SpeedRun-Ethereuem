@@ -15,6 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <main className="bg-base-100 h-screen flex justify-center items-center w-full">
+        <Hero />
+      </main>
     </>
   );
 }
