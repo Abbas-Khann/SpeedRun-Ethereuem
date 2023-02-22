@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Navbar from "@/Components/Navbar";
 import Hero from "@/Components/Hero";
+import CardNFT from "@/Components/CardNFT";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +16,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="bg-base-100 h-screen flex justify-center items-center w-full">
+      <main
+        id="home"
+        className="bg-base-100 h-screen flex justify-center items-center w-full"
+      >
         <Hero />
       </main>
+      <section
+        id="solutions"
+        className="bg-base-100 min-h-screen flex justify-center items-center w-full divide-y-2"
+      >
+        <CardNFT />
+      </section>
     </>
   );
 }

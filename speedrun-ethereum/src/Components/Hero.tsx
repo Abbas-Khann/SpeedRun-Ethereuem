@@ -2,7 +2,6 @@
 import heroImg from "../../public/img/Hero/variant1.svg";
 import heroImg2 from "../../public/img/Hero/variant2.svg";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 const Hero = () => {
   return (
     <div className="flex relative flex-col justify-center items-center min-h-full lg:w-1/2">
@@ -26,8 +25,10 @@ const Hero = () => {
       <div className="w-full flex justify-end">
         <Image className="" src={heroImg} alt="hero" width={200} height={200} />
       </div>
-      <button className="btn mt-16 bg-transparent">Get Started</button>
-      {/*  */}
+      {/* Add scroll function */}
+      <button className="btn mt-16 bg-transparent">
+        <a href="#solutions">Get Started</a>
+      </button>
     </div>
   );
 };
