@@ -4,28 +4,36 @@ import Image from "next/image";
 
 const CardNFT = () => {
   return (
-    <div className="bg-gradient-to-br from-primary to-secondary flex flex-col m-4 py-4 px-2 rounded">
-      <div className="flex flex-col justify-start items-center">
-        <h1 className="text-xl font-bold">Challenge #0</h1>
-        <span className="italic text-[#00cc55]">Simple NFT 🎟 Example</span>
-        <p className="text-center py-2">
-          🎫 Create a simple NFT to learn basics of 🏗 scaffold-eth. <br></br>
-          You'll use 👷‍♀️ HardHat to compile and deploy smart contracts. <br></br>
-          Then, you'll use a template React app full of important Ethereum
-          components and hooks. <br></br>
-          Finally, you'll deploy an NFT to a public network to share with
-          friends! 🚀
-        </p>
+    <article className="rounded-xl bg-gradient-to-r from-primary to-secondary max-lg:bg-gradient-to-t p-4 sm:p-6 lg:p-8 lg:w-4/6 m-4">
+      <div className="flex max-lg:flex-col-reverse justify-between items-center sm:gap-8">
+        <div className="max-sm:pt-8 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
+          <strong className="text-white text-xl">Challenge #0</strong>
+
+          <h3 className="mb-4 text-lg font-medium sm:text-xl">
+            <span className="italic text-[#00cc55]">Simple NFT 🎟 Example</span>
+          </h3>
+
+          <p className="lg:pl-4 mt-1 text-sm max-md:text-center">
+            🎫 Create A Simple NFT To Learn Basics Of 🏗 Scaffold-eth. <br></br>
+            You'll use 👷‍♀️ HardHat To Compile And Deploy Smart Contracts.{" "}
+            <br></br>
+            Then, You'll Use A Template React App Full Of Important Ethereum
+            Components And Hooks. <br></br>
+            Finally, You'll Deploy An NFT To A Public Network To Share With
+            Friends! 🚀
+          </p>
+
+          <div className="mt-4 sm:flex sm:items-center sm:gap-2 max-sm:flex max-lg:justify-center lg:pl-4">
+            <button className="btn-disabled p-2 border-[1px] border-[#007744] rounded bg-transparent min-lg:ml-8">
+              Solution
+            </button>
+          </div>
+        </div>
+        <div className="" aria-hidden="true">
+          <Image src={nft} alt="nft" width={300} />
+        </div>
       </div>
-      <div className="w-full flex justify-center items-center py-4">
-        <Image src={nft} alt="nft" width={300} />
-      </div>
-      <div className="w-full flex justify-center items-center">
-        <button className="btn-disabled p-2 border-[1px] border-[#007744] rounded bg-transparent">
-          Solution
-        </button>
-      </div>
-    </div>
+    </article>
   );
 };
 
