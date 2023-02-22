@@ -4,7 +4,7 @@ import { Transition } from "@headlessui/react";
 import { BiMenu } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import Image from "next/image";
-import logo from "../../public/img/logo.svg";
+import logo from "../../public/img/logo.png";
 import * as Scroll from "react-scroll";
 import CustomButton from "./CustomButton";
 
@@ -45,7 +45,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="max-w-full bg-base-100 flex justify-between items-center p-4  lg:flex lg:justify-between lg:px-0 font-plus relative lg:items-center text-white">
+    <nav className="max-w-full bg-base-100 flex justify-between items-center py-6 px-6 lg:flex lg:justify-between lg:px-0 relative lg:items-center text-white">
       {!expand ? (
         <a
           href="#"
@@ -59,7 +59,7 @@ const Navbar = () => {
       ) : (
         <a
           href="#"
-          className="self-center text-center lg:hidden fixed left-[80%] z-50 rounded-full ml-3 bg-purple-900 px-2 py-2"
+          className="self-center text-center lg:hidden fixed left-[80%] z-50 rounded-full ml-3 bg-gradient-to-r from-primary to-secondary px-2 py-2"
           onClick={() => {
             setExpand(!expand);
           }}
@@ -68,13 +68,13 @@ const Navbar = () => {
         </a>
       )}
       <div className="flex justify-between lg:justify-end w-[200px] -order-1">
-        <div className="flex items-start justify-start space-x-2 w-auto cursor-pointer">
+        <div className="flex items-start justify-start space-x-2 w-auto cursor-pointer sm:ml-5">
           <Link href="/">
             <Image src={logo} alt="logo" />
           </Link>
         </div>
       </div>
-      <ul className="hidden lg:flex justify-around items-center basis-2/5 text-lg">
+      <ul className="hidden lg:flex justify-around items-center basis-2/5 text-lg mt-5">
         <Link href="/">
           <div className="cursor-pointer relative group py-0.5 px-0.5 ">
             <div
@@ -82,8 +82,8 @@ const Navbar = () => {
              to-secondary blur-lg transition-all"
             ></div>
             <button
-              className="relative group-hover:border-t-2 border-secondary py-1 transition-all"
-              onClick={allScrolls.mint}
+              className="relative group-hover:border-t-2 border-secondary py-1 transition-all text-xl font-light"
+              // onClick={allScrolls.mint}
             >
               Home
             </button>
@@ -96,10 +96,10 @@ const Navbar = () => {
               to-secondary blur-lg transition-all"
             ></div>
             <button
-              className="relative group-hover:border-t-2 border-secondary py-1 transition-all"
+              className="relative group-hover:border-t-2 border-secondary py-1 transition-all text-xl font-light"
               onClick={allScrolls.roadmap}
             >
-              our Team
+              Team
             </button>
           </div>
         </Link>
@@ -110,7 +110,7 @@ const Navbar = () => {
               to-secondary blur-lg transition-all"
             ></div>
             <button
-              className="relative group-hover:border-t-2 border-secondary py-1 transition-all"
+              className="relative group-hover:border-t-2 border-secondary py-1 transition-all text-xl font-light"
               onClick={allScrolls.Team}
             >
               Solutions
@@ -161,7 +161,7 @@ const Navbar = () => {
                 className="cursor-pointer  transition-all text-3xl mb-4"
                 onClick={allScrolls.roadmapM}
               >
-                our Team
+               Team
               </button>
             </Link>
             <Link href="/">
