@@ -3,6 +3,7 @@ import { Inter } from "@next/font/google";
 import Navbar from "@/Components/Navbar";
 import Hero from "@/Components/Hero";
 import CardNFT from "@/Components/CardNFT";
+import Team from "@/Components/Team";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,9 +25,15 @@ export default function Home() {
       </main>
       <section
         id="solutions"
-        className="bg-base-100 min-h-screen flex justify-center items-center w-full divide-y-2"
+        className="bg-base-100 min-h-screen flex justify-center items-center w-full"
       >
         <CardNFT />
+      </section>
+      <section
+        id="team"
+        className="bg-base-100 lg:min-h-[50vh] flex justify-center items-start w-full"
+      >
+        <Team />
       </section>
     </>
   );
