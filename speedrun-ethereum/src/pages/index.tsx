@@ -4,6 +4,7 @@ import Navbar from "@/Components/Navbar";
 import Hero from "@/Components/Hero";
 import CardNFT from "@/Components/CardNFT";
 import Team from "@/Components/Team";
+import Footer from "@/Components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,15 +26,23 @@ export default function Home() {
       </main>
       <section
         id="solutions"
-        className="bg-base-100 min-h-screen flex justify-center items-center w-full"
+        className="bg-base-100 min-h-screen flex flex-col justify-center items-center w-full"
       >
+        <CardNFT />
+        <CardNFT />
+        <CardNFT />
+        <CardNFT />
+        <CardNFT />
         <CardNFT />
       </section>
       <section
         id="team"
-        className="bg-base-100 lg:min-h-[50vh] flex justify-center items-start w-full"
+        className="bg-base-100 lg:min-h-[50vh] flex justify-center items-start w-full lg:my-28"
       >
         <Team />
+      </section>
+      <section id="team" className="flex justify-center items-start w-full">
+        <Footer />
       </section>
     </>
   );
