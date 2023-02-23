@@ -24,7 +24,7 @@ const CardNFT = () => {
           </p>
 
           <div className="mt-4 sm:flex sm:items-center sm:gap-2 max-sm:flex max-lg:justify-center lg:pl-4">
-            <button className="mt-10 bg-gradient-to-r from-primary to-secondary cursor-pointer border-2 px-6 py-2 rounded-sm hover:bg-gradient-to-l from-primary to-secondary">
+            <button className="mt-10 bg-gradient-to-r from-primary to-secondary cursor-pointer border-2 px-6 py-2 rounded-sm">
               Solution
             </button>
           </div>
