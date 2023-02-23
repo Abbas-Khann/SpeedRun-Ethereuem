@@ -5,6 +5,7 @@ import Hero from "@/Components/Hero";
 import CardNFT from "@/Components/CardNFT";
 import Team from "@/Components/Team";
 import Footer from "@/Components/Footer";
+import StakingCard from "@/Components/CardStaking";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +30,7 @@ export default function Home() {
         className="bg-base-100 min-h-screen flex flex-col justify-center items-center w-full"
       >
         <CardNFT />
-        <CardNFT />
+        <StakingCard />
         <CardNFT />
         <CardNFT />
         <CardNFT />
