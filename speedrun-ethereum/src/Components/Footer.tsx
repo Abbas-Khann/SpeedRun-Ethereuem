@@ -4,7 +4,14 @@ const Footer = () => {
     <footer className="footer footer-center p-4 bg-gradient-to-r from-primary to-secondary text-base-content h-[88px]">
       <div>
         <p className={`text-xl ${styles.rainbow}`}>
-          Created by 🤍 Abbas & CJski
+          Built with 🤍 by <a
+          href="https://github.com/Abbas-Khann" 
+          target="_blank">
+            Abbas Khan </a>
+             & <a
+          href="https://github.com/CJskii" 
+          target="_blank">
+            CJski</a>
         </p>
       </div>
     </footer>

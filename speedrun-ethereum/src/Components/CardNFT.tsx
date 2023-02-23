@@ -13,7 +13,7 @@ const CardNFT = () => {
             <span className="italic text-[#00cc55]">Simple NFT 🎟 Example</span>
           </h3>
 
-          <p className="lg:pl-4 mt-1 text-sm max-md:text-center">
+          <p className="lg:pl-4 mt-1 text-sm sm:text-base">
             🎫 Create A Simple NFT To Learn Basics Of 🏗 Scaffold-eth. <br></br>
             You'll use 👷‍♀️ HardHat To Compile And Deploy Smart Contracts.{" "}
             <br></br>
@@ -24,7 +24,7 @@ const CardNFT = () => {
           </p>
 
           <div className="mt-4 sm:flex sm:items-center sm:gap-2 max-sm:flex max-lg:justify-center lg:pl-4">
-            <button className="btn-disabled p-2 border-[1px] border-[#007744] rounded bg-transparent min-lg:ml-8">
+            <button className="mt-10 bg-gradient-to-r from-primary to-secondary cursor-pointer border-2 px-6 py-2 rounded-sm hover:bg-gradient-to-l from-primary to-secondary">
               Solution
             </button>
           </div>
