@@ -6,6 +6,7 @@ import CardNFT from "@/Components/CardNFT";
 import Team from "@/Components/Team";
 import Footer from "@/Components/Footer";
 import StakingCard from "@/Components/CardStaking";
+import VendorCard from "@/Components/CardVendor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +32,7 @@ export default function Home() {
       >
         <CardNFT />
         <StakingCard />
-        <CardNFT />
+        <VendorCard />
         <CardNFT />
         <CardNFT />
         <CardNFT />
