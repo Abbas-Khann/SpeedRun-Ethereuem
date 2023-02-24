@@ -7,6 +7,7 @@ import Footer from "@/Components/Footer";
 import ChallengeCard0 from "@/Components/Challenges/Challenge #0";
 import ChallengeCard1 from "@/Components/Challenges/Challenge #1";
 import ChallengeCard2 from "@/Components/Challenges/Challenge #2";
+import ChallengeCard3 from "@/Components/Challenges/Challenge #3";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function Home() {
         <ChallengeCard0 />
         <ChallengeCard1 />
         <ChallengeCard2 />
+        <ChallengeCard3 />
       </section>
       <section
         id="team"
