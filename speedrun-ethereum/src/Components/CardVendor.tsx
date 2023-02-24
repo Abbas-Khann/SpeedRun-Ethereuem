@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const VendorCard = () => {
   return (
-    <article className="rounded-xl bg-gradient-to-r from-primary to-secondary max-lg:bg-gradient-to-t p-4 sm:p-6 lg:p-8 lg:w-4/6 m-4">
+    <article className="rounded-xl bg-gradient-to-r from-primary to-secondary max-lg:bg-gradient-to-t p-4 sm:p-6 lg:p-8 lg:w-4/6 md:w-5/6 m-4">
       <div className="flex max-lg:flex-col-reverse justify-between items-center sm:gap-8">
         <div className="max-sm:pt-8 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
           <strong className="text-white text-xl">Challenge #2</strong>
@@ -28,7 +28,7 @@ const VendorCard = () => {
             </button>
           </div>
         </div>
-        <div aria-hidden="true">
+        <div aria-hidden="true" className="max-lg:w-[300px] max-md:w-[250px]">
           <Image src={vendor} alt="vendor" width={450} />
         </div>
       </div>

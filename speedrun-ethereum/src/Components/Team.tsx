@@ -4,7 +4,7 @@ const Team = () => {
   return (
     <div className="flex flex-col justify-center items-center lg:w-4/6 gap-16 my-16">
       <h1 className="text-center font-bold text-5xl sm:text-7xl">Team</h1>
-      <div className="flex justify-center items-center gap-16 max-md:flex-col">
+      <div className="flex justify-center items-center gap-16 max-md:flex-col md:gap-8">
         {/* ----- Card 1 ----- */}
         <TeamCard />
 

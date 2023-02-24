@@ -9,7 +9,7 @@ import SocialIcons from "./SocialIcons";
 const TeamCard = () => {
   return (
     <div className="bg-gradient-to-r from-primary to-secondary p-0.5 rounded-[12px] relative">
-      <div className="flex flex-col w-[350px] h-[325px] justify-evenly items-center rounded-[12px] bg-base-100">
+      <div className="flex flex-col w-[350px] h-[325px] justify-evenly items-center rounded-[12px] bg-base-100 max-sm:w-[90vw]">
         {/* ----- Img + Text ----- */}
         <div className="flex justify-around items-center w-full">
           <div className="bg-gradient-to-b from-primary-focus to-secondary-focus rounded-[12px] m-2">
@@ -22,7 +22,9 @@ const TeamCard = () => {
 
           <div className="w-2/5">
             <h1 className="text-white text-xl">Abbas Khan</h1>
-            <p className="text-white opacity-60 pt-1 text-sm">Full Stack Developer</p>
+            <p className="text-white opacity-60 pt-1 text-sm">
+              Full Stack Developer
+            </p>
           </div>
         </div>
         {/* ------ Icons ----- */}

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CardNFT = () => {
   return (
-    <article className="rounded-xl bg-gradient-to-r from-primary to-secondary max-lg:bg-gradient-to-t p-4 sm:p-6 lg:p-8 lg:w-4/6 m-4">
+    <article className="rounded-xl bg-gradient-to-r from-primary to-secondary max-lg:bg-gradient-to-t p-4 sm:p-6 lg:p-8 lg:w-4/6 md:w-5/6 m-4">
       <div className="flex max-lg:flex-col-reverse justify-between items-center sm:gap-8">
         <div className="max-sm:pt-8 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
           <strong className="text-white text-xl">Challenge #0</strong>
@@ -29,7 +29,7 @@ const CardNFT = () => {
             </button>
           </div>
         </div>
-        <div className="" aria-hidden="true">
+        <div className="max-lg:w-[250px]" aria-hidden="true">
           <Image src={nft} alt="nft" width={300} />
         </div>
       </div>

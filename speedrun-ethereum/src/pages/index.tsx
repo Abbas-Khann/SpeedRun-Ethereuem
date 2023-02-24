@@ -22,13 +22,13 @@ export default function Home() {
       <Navbar />
       <main
         id="home"
-        className="bg-base-100 h-screen flex justify-center items-center w-full"
+        className="bg-base-100 lg:h-screen flex justify-center items-center w-full max-md:min-h-screen overflow-x-hidden"
       >
         <Hero />
       </main>
       <section
         id="solutions"
-        className="bg-base-100 min-h-screen flex flex-col justify-center items-center w-full"
+        className="bg-base-100 min-h-screen flex flex-col justify-center items-center w-full overflow-x-hidden"
       >
         <CardNFT />
         <StakingCard />
@@ -39,7 +39,7 @@ export default function Home() {
       </section>
       <section
         id="team"
-        className="bg-base-100 lg:min-h-[50vh] flex justify-center items-start w-full lg:my-28"
+        className="bg-base-100 lg:min-h-[50vh] flex justify-center items-start w-full lg:my-28 overflow-x-hidden"
       >
         <Team />
       </section>

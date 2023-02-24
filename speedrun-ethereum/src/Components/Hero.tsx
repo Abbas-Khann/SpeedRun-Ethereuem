@@ -19,11 +19,11 @@ const Hero = () => {
           height={200}
         />
       </div>
-      <p className="text-md text-center px-4 text-lg sm:text-xl lg:col-start-5 lg:col-span-4 lg:row-start-4 lg:row-span-2 lg:self-center">
+      <p className="text-md text-center px-4 text-lg sm:text-xl lg:col-start-5 lg:col-span-4 lg:row-start-4 lg:row-span-2 min-[1024px]:row-start-5 lg:self-center">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
         fugit expedita doloremque nulla enim iure!
       </p>
-      <div className="w-full flex justify-end lg:w-[33vw] lg:col-span-6 lg:col-start-9 lg:row-start-4 lg:row-span-3 lg:self-center">
+      <div className="w-full flex justify-end min-md:w-[33vw] lg:col-span-6 lg:col-start-9 lg:row-start-4 lg:row-span-3 lg:self-center">
         <Image
           className="w-full"
           src={heroImg}
@@ -33,7 +33,7 @@ const Hero = () => {
         />
       </div>
       {/* Add scroll function */}
-      <button className="mt-10 bg-transparent border-2 py-2 w-[180px] rounded-sm hover:bg-gradient-to-r from-primary to-secondary hover:animate-bounce row-start-6 col-start-6 col-span-2 self-center">
+      <button className="mt-10 bg-transparent border-2 py-2 w-[180px] rounded-sm hover:bg-gradient-to-r from-primary to-secondary hover:animate-bounce row-start-6 col-start-6 col-span-2 self-center min-[1024px]:row-start-7">
         <a href="#solutions">Get Started</a>
       </button>
     </div>
