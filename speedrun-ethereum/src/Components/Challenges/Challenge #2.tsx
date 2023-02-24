@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import vendor from "../../public/img/Card/tokenVendor.svg";
+import vendor from "../../../public/img/Card/tokenVendor.svg";
 import Image from "next/image";
 
 const VendorCard = () => {

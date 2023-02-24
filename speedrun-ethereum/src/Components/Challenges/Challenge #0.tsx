@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import nft from "../../public/img/Card/simpleNFT.svg";
+import nft from "../../../public/img/Card/simpleNFT.svg";
 import Image from "next/image";
 
 const CardNFT = () => {

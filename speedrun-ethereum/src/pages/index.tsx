@@ -2,11 +2,11 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Navbar from "@/Components/Navbar";
 import Hero from "@/Components/Hero";
-import CardNFT from "@/Components/CardNFT";
 import Team from "@/Components/Team";
 import Footer from "@/Components/Footer";
-import StakingCard from "@/Components/CardStaking";
-import VendorCard from "@/Components/CardVendor";
+import ChallengeCard0 from "@/Components/Challenges/Challenge #0";
+import ChallengeCard1 from "@/Components/Challenges/Challenge #1";
+import ChallengeCard2 from "@/Components/Challenges/Challenge #2";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,12 +30,9 @@ export default function Home() {
         id="solutions"
         className="bg-base-100 min-h-screen flex flex-col justify-center items-center w-full overflow-x-hidden"
       >
-        <CardNFT />
-        <StakingCard />
-        <VendorCard />
-        <CardNFT />
-        <CardNFT />
-        <CardNFT />
+        <ChallengeCard0 />
+        <ChallengeCard1 />
+        <ChallengeCard2 />
       </section>
       <section
         id="team"
