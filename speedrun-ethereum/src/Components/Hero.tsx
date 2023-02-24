@@ -33,7 +33,7 @@ const Hero = () => {
         />
       </div>
       {/* Add scroll function */}
-      <button className="mt-10 bg-transparent border-2 px-6 py-2 rounded-sm hover:bg-gradient-to-r from-primary to-secondary hover:animate-bounce row-start-6 col-start-6 col-span-2 self-center">
+      <button className="mt-10 bg-transparent border-2 py-2 w-[180px] rounded-sm hover:bg-gradient-to-r from-primary to-secondary hover:animate-bounce row-start-6 col-start-6 col-span-2 self-center">
         <a href="#solutions">Get Started</a>
       </button>
     </div>
