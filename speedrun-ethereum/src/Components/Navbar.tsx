@@ -18,20 +18,12 @@ const Navbar = () => {
       scroll.scrollTo(0);
       setExpand(!expand);
     },
-    mint: (): void => {
-      scroll.scrollTo(1400);
+    Solutions: (): void => {
+      scroll.scrollTo(900);
       setExpand(!expand);
     },
-    mintM: (): void => {
-      scroll.scrollTo(1200);
-      setExpand(!expand);
-    },
-    roadmap: (): void => {
-      scroll.scrollTo(2950);
-      setExpand(!expand);
-    },
-    roadmapM: (): void => {
-      scroll.scrollTo(2400);
+    SolutionsM: (): void => {
+      scroll.scrollTo(800);
       setExpand(!expand);
     },
     Team: (): void => {
@@ -39,7 +31,7 @@ const Navbar = () => {
       setExpand(!expand);
     },
     TeamM: (): void => {
-      scroll.scrollTo(3900);
+      scroll.scrollTo(3700);
       setExpand(!expand);
     },
   };
@@ -83,7 +75,7 @@ const Navbar = () => {
             ></div>
             <button
               className="relative group-hover:border-t-2 border-secondary py-1 transition-all text-xl font-light"
-              // onClick={allScrolls.mint}
+              onClick={allScrolls.home}
             >
               Home
             </button>
@@ -97,7 +89,7 @@ const Navbar = () => {
             ></div>
             <button
               className="relative group-hover:border-t-2 border-secondary py-1 transition-all text-xl font-light"
-              onClick={allScrolls.roadmap}
+              onClick={allScrolls.Team}
             >
               Team
             </button>
@@ -111,7 +103,7 @@ const Navbar = () => {
             ></div>
             <button
               className="relative group-hover:border-t-2 border-secondary py-1 transition-all text-xl font-light"
-              onClick={allScrolls.Team}
+              onClick={allScrolls.Solutions}
             >
               Solutions
             </button>
@@ -151,7 +143,7 @@ const Navbar = () => {
             <Link href="/">
               <button
                 className="cursor-pointer  transition-all text-3xl mb-4"
-                onClick={allScrolls.mintM}
+                onClick={allScrolls.home}
               >
                 Home
               </button>
@@ -159,15 +151,15 @@ const Navbar = () => {
             <Link href="/">
               <button
                 className="cursor-pointer  transition-all text-3xl mb-4"
-                onClick={allScrolls.roadmapM}
+                onClick={allScrolls.TeamM}
               >
-               Team
+                Team
               </button>
             </Link>
             <Link href="/">
               <button
                 className="cursor-pointer  transition-all text-3xl mb-4"
-                onClick={allScrolls.TeamM}
+                onClick={allScrolls.SolutionsM}
               >
                 Solutions
               </button>
