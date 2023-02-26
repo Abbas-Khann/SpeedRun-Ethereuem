@@ -18,3 +18,23 @@
     background-position: 0% 50%;
   }
 }
+
+.animategradient:hover {
+  background-position: left;
+  animation: gradient-animation 3s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: left;
+    background-size: 200% 200%;
+  }
+  50% {
+    background-position: right;
+    background-size: 200% 200%;
+  }
+  100% {
+    background-position: left;
+    background-size: 200% 200%;
+  }
+}
