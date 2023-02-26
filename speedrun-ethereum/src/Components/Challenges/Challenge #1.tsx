@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import staking from "../../../public/img/Card/state.svg";
+import staking from "../../../public/img/Card/staking.svg";
 import Image from "next/image";
 
 const StakingCard = () => {
