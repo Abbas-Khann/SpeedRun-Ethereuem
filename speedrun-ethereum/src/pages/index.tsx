@@ -10,6 +10,7 @@ import ChallengeCard2 from "@/Components/Challenges/Challenge #2";
 import ChallengeCard3 from "@/Components/Challenges/Challenge #3";
 import ChallengeCard4 from "@/Components/Challenges/Challenge #4";
 import ChallengeCard5 from "@/Components/Challenges/Challenge #5";
+import ChallengeCard6 from "@/Components/Challenges/Challenge #6";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +40,7 @@ export default function Home() {
         <ChallengeCard3 />
         <ChallengeCard4 />
         <ChallengeCard5 />
+        <ChallengeCard6 />
       </section>
       <section
         id="team"
