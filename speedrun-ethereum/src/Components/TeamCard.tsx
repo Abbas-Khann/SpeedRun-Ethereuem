@@ -19,9 +19,8 @@ const TeamCard = ({ member }: { member: any }) => {
             <Image
               src={pfp}
               alt="pfp"
-              className="h-[128px] w-[97px] rounded-[12px] pt-[2px] pl-[2px] pb-[6px] pr-[6px]"
-              width={97}
-              height={128}
+              className="h-[128px] w-[140px] rounded-[12px] pt-[2px] pl-[2px] pb-[6px] pr-[6px]"
+
             />
           </div>
 
