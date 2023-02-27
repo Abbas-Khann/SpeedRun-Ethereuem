@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
+import React, { useState } from "react";
 import Navbar from "@/Components/Navbar";
 import Hero from "@/Components/Hero";
 import Team from "@/Components/Team";
@@ -17,6 +18,16 @@ import ChallengeCard8 from "@/Components/Challenges/Challenge #8";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [theme, setTheme] = useState("default");
+
+  const toggleTheme = () => {
+    if (theme == "default") {
+      setTheme("light");
+    } else if (theme == "light") {
+      setTheme("default");
+    }
+  };
+
   return (
     <>
       <Head>
@@ -25,16 +36,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <Navbar toggleTheme={toggleTheme} theme={theme} />
       <main
         id="home"
         className="bg-base-100 lg:h-screen flex justify-center items-center w-full max-md:min-h-screen overflow-x-hidden"
+        data-theme={theme}
       >
-        <Hero />
+        <Hero theme={theme} />
       </main>
       <section
         id="solutions"
         className="bg-base-100 min-h-screen flex flex-col justify-center items-center w-full overflow-x-hidden"
+        data-theme={theme}
       >
         <ChallengeCard0 />
         <ChallengeCard1 />
@@ -48,7 +61,8 @@ export default function Home() {
       </section>
       <section
         id="team"
-        className="bg-base-100 lg:min-h-[50vh] flex justify-center items-start w-full lg:my-28 overflow-x-hidden"
+        className="bg-base-100 lg:min-h-[50vh] flex justify-center items-start w-full lg:py-28 overflow-x-hidden"
+        data-theme={theme}
       >
         <Team />
       </section>

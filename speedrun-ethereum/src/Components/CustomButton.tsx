@@ -38,7 +38,7 @@ export const CustomButton = () => {
                 return (
                   <span
                     onClick={openConnectModal}
-                    className="text-lg play-btn px-[1.42rem] py-3 cursor-pointer font-normal animate-text bg-gradient-to-l from-primary to-secondary rounded"
+                    className="text-lg play-btn px-[1.42rem] py-3 cursor-pointer font-normal animate-text bg-gradient-to-l from-primary to-secondary rounded text-secondary-content"
                   >
                     Connect Wallet
                   </span>
@@ -47,8 +47,10 @@ export const CustomButton = () => {
 
               if (chain.unsupported) {
                 return (
-                  <button onClick={openChainModal} type="button"
-                  className="text-lg play-btn px-[1rem] py-3 cursor-pointer font-normal animate-text bg-red-500 rounded"
+                  <button
+                    onClick={openChainModal}
+                    type="button"
+                    className="text-lg play-btn px-[1rem] py-3 cursor-pointer font-normal animate-text bg-red-500 rounded"
                   >
                     Wrong Network
                   </button>

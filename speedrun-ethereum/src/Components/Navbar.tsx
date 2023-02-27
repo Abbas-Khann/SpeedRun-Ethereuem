@@ -4,11 +4,19 @@ import { Transition } from "@headlessui/react";
 import { BiMenu } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import Image from "next/image";
-import logo from "../../public/img/logo.png";
+import logoDefault from "../../public/img/logoDefault.png";
+import logoLight from "../../public/img/logoLight.png";
 import * as Scroll from "react-scroll";
 import CustomButton from "./CustomButton";
+import toggleLight from "../../public/img/Icons/toggle.svg";
+import toggleDark from "../../public/img/Icons/toggleDark.svg";
 
-const Navbar = () => {
+type Props = {
+  toggleTheme: () => void;
+  theme: string;
+};
+
+const Navbar = ({ toggleTheme, theme }: Props) => {
   // --------- States here -------------
   const [expand, setExpand] = useState<boolean>(false);
   let scroll = Scroll.animateScroll;
@@ -37,7 +45,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="max-w-full bg-base-100 flex justify-between items-center py-6 px-6 lg:flex lg:justify-between lg:px-0 relative lg:items-center text-white">
+    <nav
+      className="max-w-full bg-base-100 flex justify-between items-center py-6 px-6 lg:flex lg:justify-between lg:px-0 relative lg:items-center text-base-content"
+      data-theme={theme}
+    >
       {!expand ? (
         <a
           href="#"
@@ -59,10 +70,14 @@ const Navbar = () => {
           <MdClose className="text-4xl text-white" />
         </a>
       )}
-      <div className="flex justify-between lg:justify-end w-[200px] -order-1">
+      <div className="flex justify-between lg:justify-start w-[250px] -order-1">
         <div className="flex items-start justify-start space-x-2 w-auto cursor-pointer sm:ml-5">
           <Link href="/">
-            <Image src={logo} alt="logo" />
+            <Image
+              src={theme == "default" ? logoDefault : logoLight}
+              alt="logo"
+              width={180}
+            />
           </Link>
         </div>
       </div>
@@ -110,7 +125,15 @@ const Navbar = () => {
           </div>
         </Link>
       </ul>
-      <div className="hidden lg:flex items-center w-[200px]">
+      <div className="hidden lg:flex items-center justify-between w-[250px] relative">
+        <div className="flex h-full cursor-pointer">
+          <Image
+            src={theme == "default" ? toggleLight : toggleDark}
+            alt="toggle"
+            onClick={toggleTheme}
+          />
+        </div>
+
         <CustomButton />
       </div>
       {/* --------------- Mobile and Tablets --------------- */}
@@ -136,7 +159,12 @@ const Navbar = () => {
                 setExpand(!expand);
               }}
             >
-              <Image src={logo} width={259} height={180} alt="logo" />
+              <Image
+                src={theme == "default" ? logoDefault : logoLight}
+                width={259}
+                height={180}
+                alt="logo"
+              />
             </Link>
           </div>
           <ul className=" flex flex-col justify-between basis-2/6 items-start mb-6">

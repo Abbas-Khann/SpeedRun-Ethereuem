@@ -1,8 +1,10 @@
-import heroImg from "../../public/img/Hero/variant1.svg";
-import heroImg2 from "../../public/img/Hero/variant2.svg";
+import heroImgDefault from "../../public/img/Hero/variant1.svg";
+import heroImgDefault2 from "../../public/img/Hero/variant2.svg";
+import heroImgLight from "../../public/img/Hero/variant3.svg";
+import heroImgLight2 from "../../public/img/Hero/variant4.svg";
 import Image from "next/image";
 import styles from "../styles/Grid.module.css";
-const Hero = () => {
+const Hero = ({ theme }: { theme: string }) => {
   return (
     <div
       className={`flex relative flex-col justify-center items-center min-h-full lg:grid lg:w-1/2 md:pb-8 ${styles.grid}`}
@@ -13,7 +15,7 @@ const Hero = () => {
       <div className="max-md:w-full md:w-4/6 md:self-start flex justify-start items-center pb-4 p-2 w-[30vw] col-start-1 col-span-3 row-start-2 row-span-3 min-xl:-ml-28 lg:row-start-4 lg:row-span-4 lg:col-start-1 lg:col-span-6 lg:w-[33vw] lg:-ml-16 ">
         <Image
           className="w-full"
-          src={heroImg2}
+          src={theme == "default" ? heroImgDefault2 : heroImgLight2}
           alt="hero2"
           width={200}
           height={200}
@@ -26,14 +28,14 @@ const Hero = () => {
       <div className="max-md:w-full md:w-4/6 md:pb-8 flex justify-end w-[33vw] col-span-6 col-start-9 row-start-5 row-span-3 lg:self-center lg:row-start-6 lg:row-span-3 lg:col-start-8 lg:col-span-5 lg:w-[33vw] place-self-end lg:-mr-12">
         <Image
           className="w-full"
-          src={heroImg}
+          src={theme == "default" ? heroImgDefault : heroImgLight}
           alt="hero"
           width={200}
           height={200}
         />
       </div>
       {/* Add scroll function */}
-      <button className="mt-10 bg-transparent border-2 py-2 w-[180px] rounded-sm hover:bg-gradient-to-r from-primary to-secondary hover:animate-bounce row-start-5 col-start-6 col-span-2 place-self-center lg:row-start-7 lg:row-span-3 lg:col-start-6 lg:col-span-2 lg:self-center">
+      <button className="mt-10 bg-transparent border-2 border-base-content py-2 w-[180px] rounded-sm hover:bg-gradient-to-r from-primary to-secondary hover:animate-bounce row-start-5 col-start-6 col-span-2 place-self-center lg:row-start-7 lg:row-span-3 lg:col-start-6 lg:col-span-2 lg:self-center">
         <a href="#solutions">Get Started</a>
       </button>
     </div>
