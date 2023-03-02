@@ -7,7 +7,7 @@ const Team = () => {
   const [teamMembers, setTeamMembers] = useState([
     {
       name: "Abbas Khan",
-      title: "Full Stack Developer",
+      title: "Designer/Full-Stack-Developer",
       discord: "https://discord.com/users/1078669231241048074",
       twitter: "https://twitter.com/KhanAbbas201",
       github: "https://github.com/Abbas-Khann",
